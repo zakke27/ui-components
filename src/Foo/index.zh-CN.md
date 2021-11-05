@@ -14,4 +14,5 @@ import { Foo } from 'dr-ui-components';
 
 export default () => <Foo title="First Demo" />;
 ```
-更多编写实力的技巧详见: https://d.umijs.org/guide/basic#write-component-demo
+
+更多编写示例的技巧详见: https://d.umijs.org/guide/basic#write-component-demo
