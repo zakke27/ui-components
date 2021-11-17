@@ -1,0 +1,37 @@
+@import '../_utils/Constant/color.scss';
+
+html {
+  font-size: 10px;
+}
+
+@mixin ButtonBase {
+  display: table-cell;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 0.0105rem;
+  border-radius: 0.4rem;
+  vertical-align: middle;
+  outline: none;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.button_type__primary {
+  @include ButtonBase();
+  color: $background;
+  background: $primary_variant;
+  border: 0.05rem solid transparent;
+}
+
+.button_type__secondary {
+  @include ButtonBase();
+}
+
+.button_type__warning {
+}
+.button_type__danger {
+  background: $error;
+}
+
+.button_type__text {
+}

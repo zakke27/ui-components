@@ -1,0 +1,48 @@
+/**
+* file: project style font size and font family file
+* date: 2020-07-21
+* author: Frank
+* lastModify: Andy Jiang 2020-11-26
+*/
+
+/* this file will contain all the font size and font family that will be used in the project */
+/* font family list */
+$commonFamily: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica", "Arial",
+    "Calibri", "Segoe UI", "Ping Fang SC", "Microsoft Yahei";
+/* combined font naming rule: fs_`font weight`-`font size`
+   font weight list
+   r: regular 400
+   l: light 300
+   m: medium 500 */
+$fs_r_48: 400 4.8rem $commonFamily;
+$fs_r_40: 400 4rem $commonFamily;
+$fs_r_34: 400 3.4rem $commonFamily;
+$fs_l_34: 300 3.4rem $commonFamily;
+$fs_r_30: 400 3rem $commonFamily;
+$fs_l_30: 300 3rem $commonFamily;
+$fs_n_25: 900 2.5rem $commonFamily;
+$fs_m_24: 500 2.4rem $commonFamily;
+$fs_r_24: 400 2.4rem $commonFamily;
+$fs_r_22: 400 2.2rem $commonFamily;
+$fs_l_22: 300 2.2rem $commonFamily;
+$fs_m_20: 500 2rem $commonFamily;
+$fs_r_20: 400 2rem $commonFamily;
+$fs_m_18: 500 1.8rem $commonFamily;
+$fs_r_18: 400 1.8rem $commonFamily;
+$fs_l_18: 300 1.8rem $commonFamily;
+$fs_m_16: 500 1.6rem $commonFamily;
+$fs_r_16: 400 1.6rem $commonFamily;
+$fs_l_16: 300 1.6rem $commonFamily;
+$fs_m_14: 500 1.4rem $commonFamily;
+$fs_r_14: 400 1.4rem $commonFamily;
+$fs_l_14: 300 1.4rem $commonFamily;
+$fs_m_12: 500 1.2rem $commonFamily;
+$fs_r_12: 400 1.2rem $commonFamily;
+$fs_l_12: 300 1.2rem $commonFamily;
+$fs_m_10: 500 1rem $commonFamily;
+$fs_r_10: 400 1rem $commonFamily;
+$fs_l_10: 300 1rem $commonFamily;
+
+/* font size list for FontAwesomeIcon */
+$fs_16: 1.6rem;
+$fs_14: 1.4rem;
