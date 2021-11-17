@@ -20,9 +20,9 @@ import { Button } from 'dr-ui-components';
 export default () => {
   return (
     <>
-      <Button>default</Button>
-      <Button>default</Button>
-      <Button>default</Button>
+      <Button type="primary">primary</Button>
+      <Button type="primary">primary31ddkasldakdlqmwerq;we</Button>
+      <Button>secondary</Button>
     </>
   );
 };
@@ -31,3 +31,5 @@ export default () => {
 ### 按钮尺寸
 
 按钮尺寸
+
+<API src="./index.tsx"></API>

@@ -2,34 +2,64 @@ import React, { FC } from 'react';
 import styles from './style.module.scss';
 
 export type ButtonType =
-  | 'default'
   | 'primary'
-  | 'info'
+  | 'secondary'
   | 'warning'
   | 'danger'
-  | 'text';
-
+  | 'text'
 export type ButtonSize = 'large' | 'default' | 'small';
 
-interface ButtonProps {
-  type?: ButtonType;
-  size?: ButtonSize;
+export interface ButtonProps {
+  /**
+   * @description  设置按钮类型
+   * @description.en-US  set button Type
+   * @default default
+   */
+  type?: 'primary' | 'warning' | 'danger' | 'text' | 'secondary';
+  /**
+   * @description 设置按钮尺寸
+   * @default normal
+   */
+  size?: 'large' | 'normal' | 'small';
   className?: string;
   icon?: React.ReactNode;
   children?: React.ReactNode;
 }
 
-export const getButtonStyle = (type: ButtonType) => {};
-
 const Button: FC<ButtonProps> = ({
-  type,
-  size,
+  type = 'secondary',
+  size = 'normal',
   className,
-  icon,
   children,
   ...restProps
 }) => {
-  return <button>{children}</button>;
+  /**
+   *
+   * @param type
+   */
+  const getButtonTypeStyle = (type: ButtonType) => {
+    switch (type) {
+      case 'primary':
+        return styles.button_type__primary;
+      case 'secondary':
+        return styles.button_type__secondary;
+      default:
+        return styles.button_type__secondary;
+    }
+  };
+  /**
+   *
+   * @param size
+   */
+  const getButtonSizeStyle = (size: ButtonSize) => {};
+
+  return (
+    <button
+      className={getButtonTypeStyle(type) + (className ? ' ' + className : '')}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;
